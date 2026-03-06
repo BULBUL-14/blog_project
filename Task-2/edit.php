@@ -1,0 +1,28 @@
+<?php
+include "db.php";
+
+$id=$_GET['id'];
+
+$result=mysqli_query($conn,"SELECT * FROM posts WHERE id=$id");
+$row=mysqli_fetch_assoc($result);
+
+if(isset($_POST['update'])){
+
+$title=$_POST['title'];
+$content=$_POST['content'];
+
+mysqli_query($conn,"UPDATE posts SET title='$title',content='$content' WHERE id=$id");
+
+header("Location:index.php");
+}
+?>
+
+<form method="POST">
+
+<input type="text" name="title" value="<?php echo $row['title']; ?>"><br>
+
+<textarea name="content"><?php echo $row['content']; ?></textarea><br>
+
+<button name="update">Update</button>
+
+</form>
