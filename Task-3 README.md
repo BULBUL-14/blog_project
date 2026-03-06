@@ -33,3 +33,4 @@ config.php
 🎯 Output
 
 User logs in ➜ Adds a post ➜ Post is saved in database ➜ Post appears on the homepage.
+link: http://localhost/blog_project/login.php
