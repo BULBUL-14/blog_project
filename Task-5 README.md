@@ -23,3 +23,4 @@ This task implements pagination to display posts in multiple pages instead of sh
 🌐 HTML
 
 🎨 CSS
+link: http://localhost/blog_project/register.php
