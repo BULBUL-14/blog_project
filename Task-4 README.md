@@ -36,3 +36,4 @@ config.php
 
 User selects a post ➜ Clicks Edit to update content ✏️
 OR ➜ Clicks Delete to remove the post 🗑
+link: http://localhost/blog_project/
